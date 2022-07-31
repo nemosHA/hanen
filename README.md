@@ -1,5 +1,14 @@
-in this task: created a website to control movement of Robot Arm.
-you can move the arm from 0 - 180 deg using a webpage written in html,javascript
-connected to Arduino code (C++), files uploaded above.
+Robot Arm Controoler Via Web
 
-ref: https://www.youtube.com/c/RuiSantosdotme/about
+Requirements:
+
+Arduino Uno Rev3
+PHPoC WiFi Shield for Arduino
+6DOF Arm Robot
+Source Code :
+
+Source code inlude two files:
+
+Robot_Arm.ino: Arduino code.
+Arm_Controler.php: Web app code, which is uploaded to PHPoC WiFi Shield or PHPoC Shield.
+You also need to upload the image file flywheel.png to PHPoC Shield.
