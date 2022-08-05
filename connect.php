@@ -1,12 +1,12 @@
 <?php
 	$IntNum = $_POST['IntNum'];
 	// Database connection
-	$conn = new mysqli('localhost','root','','SmartMethods');
+	$conn = new mysqli('localhost','root','','task');
 	if($conn->connect_error){
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
-		$stmt = $conn->prepare("insert into SmartMethodsData(Number) values (?)");
+		$stmt = $conn->prepare("insert into TaskData(Number) values (?)");
 		$stmt->bind_param("i", $IntNum);
 		$execval = $stmt->execute();
 		echo "Registration successfully...";
