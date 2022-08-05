@@ -1,0 +1,7 @@
+OneDB [(none)]> create database Task;
+Query OK, 1 row affected (0.013 sec)
+
+OneDB [(none)]> use Task
+Database changed
+OneDB [Task]> Create table TaskData(Number int);
+Query OK, 0 rows affected (0.197 sec)
